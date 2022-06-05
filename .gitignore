@@ -1,0 +1,9 @@
+target
+build
+dist
+*.env*
+*.log*
+*.DS_Store*
+!*.example*
+/data
+/config/*
