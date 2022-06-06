@@ -1,0 +1,19 @@
+[package]
+name = "slab-frontend"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+name = "slab_frontend"
+crate-type = ["cdylib"]
+
+[dependencies]
+slab-core = { path = "../core" }
+serde = { version = "1.0.137", features = ["derive"] }
+sycamore = { git = "https://github.com/sycamore-rs/sycamore" }
+sycamore-router = { git = "https://github.com/sycamore-rs/sycamore" }
+console_error_panic_hook = "0.1.7"
+tracing = "0.1.34"
+tracing-wasm = "0.2.1"
+wasm-bindgen = "0.2.80"
+getrandom = { version = "0.2.6", features = ["js"] }

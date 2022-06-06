@@ -1,0 +1,22 @@
+{
+  "name": "slab-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "serve": "miniserve --spa --index index.html -p 4000 dist/"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@wasm-tool/rollup-plugin-rust": "^2.2.2",
+    "rollup": "^2.75.5",
+    "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "@guanghechen/rollup-plugin-copy": "^1.9.5",
+    "rollup-plugin-scss": "^3.0.0"
+  }
+}
